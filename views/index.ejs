@@ -9,11 +9,14 @@
 <body>
     <div class="container">
         <h1>QR Generator</h1>
-        <form action="/qr" method="post">
-            <input type="text" name="text" placeholder="Enter Url">
-            <button>Generate QR</button>
+        <form action="/qr" method="post" >
+            <input type="text" name="url" placeholder="Enter Url">
+            <button type="submit">Generate QR</button>
         </form>
-        <img src="/qr.png" alt="QR Code">
+        <div class="imageContainer">
+            <%- image %>
+        </div>
     </div>
 </body>
 </html>
+

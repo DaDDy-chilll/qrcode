@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&family=PT+Sans&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -10,7 +11,7 @@ body {
 }
 
 .container {
-    background-color: lightblue;
+    background-color: rgb(198, 173, 230);
     backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 10px;
@@ -22,6 +23,7 @@ body {
 .container h1 {
     color: white;
     font-size: 3rem;
+    font-family: "PT Sans", sans-serif;
 }
 
 input {
@@ -34,6 +36,21 @@ input {
 button {
     padding: 10px;
     border: none;
-    color: lightblue;
+    color: rgb(198, 173, 230);
     background-color: white;
+    font-weight: bolder;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:rgb(198, 173, 230) ;
+    color: white;
+    border: 1px solid white;
+}
+
+.imageContainer{
+    margin-top: 5%;
+    border: 1px solid white;
+    padding: 2%;
 }
